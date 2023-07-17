@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Cute+Font&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecec11;
+  margin: 0;
+  font-family: 'Cute Font', cursive;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+  letter-spacing: 1px; 
+  text-align: center;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+.container {
+  background-color: #9b62dc;
+/*   width: 70vw; */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;  
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px #2a6dc5, -8px -8px 8px #15437e, 8px -8px 8px #24579b, -8px 8px 8px #114D99;
+  
+}
+
+.images, .buttons  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;   
+  flex-wrap: wrap; 
+  width: 100%;  
+}
+
+#dog-img, {
+  background-color: #fff;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+#dog-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#btn-dog {
+  margin: 10px;
+  padding: 2px 12px;
+  border-radius: 5px;
+  outline: none;  
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #7f19b6;
+}
+
+#btn-dog:hover {
+  background-color: #EA9306;
+  transform: scale(1.2);
+}
+
+#btn-dog:active {
+  transform: scale(.9);
+}
+
+@media only screen and (max-width: 590px) {
+  .header {
+    font-size: 20px;
+  }
+  #dog-img {
+    background-color: #fff;    
+    width: 200px;
+    height: 200px;
+  }
+}
